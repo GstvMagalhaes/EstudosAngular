@@ -1,4 +1,29 @@
 .section {
-    background: #F2F2F2;
-    height: auto;
+    width: 100%;
+    max-width: 550px;
+    padding: 15px;
+    margin: auto;
+    background-color: #000000;
+    border-radius: 20px;
+    margin-top: 8.4rem;
+    margin-bottom: 1.5rem;
+    border: 4px;
+    border-color: #260726;
+    border-style: solid;
+    box-shadow: 1px 0px 4px 4px rgb(0, 255, 255);
+}
+
+.a{
+    background-color: #000000;
+    padding: 2.2rem;
+}
+
+.formCliente{
+    text-align: center;
+    padding: 2.5rem;
+}
+
+.title{
+    font-size: 35px;
+    color: rgb(255, 255, 255);
 }

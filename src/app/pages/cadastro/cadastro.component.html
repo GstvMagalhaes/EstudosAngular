@@ -1,5 +1,44 @@
-<div class="col-lg-12">
-    <label for="name">Nome Completo</label>
-    <input type="text" class="p-inputtext-sm" placeholder="Nome Completo" pInputText
-        formControlName="nome" />
+<div class="a">
+    <form [formGroup]="titularForm" class="section">
+        <div class="formCliente">
+            <h2 class="title">Preencha o cadastro</h2>
+            <div class="col-lg-12 md:col-4 p-3">
+                <div class="p-inputgroup">
+                    <span class="p-inputgroup-addon"><i class="pi pi-user"></i></span>
+                    <input type="text" pInputText formControlName="nome" placeholder="Username">         
+                </div>
+            </div>
+            <div class="col-lg-12 md:col-4 p-3">
+                <div class="p-inputgroup">
+                    <span class="p-inputgroup-addon"><i class="pi pi-calendar"></i></span>
+                    <input type="text" pInputText formControlName="dataNasc" mask="99/99/9999" placeholder="Data de nascimento">         
+                </div>
+            </div>
+            <div class="col-lg-12 md:col-4 p-3">
+                <div class="p-inputgroup">
+                    <span class="p-inputgroup-addon"><i class="pi pi-id-card"></i></span>
+                    <input type="text" pInputText formControlName="cpf" mask="999.999.999-99" placeholder="CPF">         
+                </div>
+            </div>
+            <div class="col-lg-12 md:col-4 p-3">
+                <div class="p-inputgroup">
+                    <span class="p-inputgroup-addon"><i class="pi pi-envelope"></i></span>
+                    <input type="text" pInputText placeholder="Email">         
+                </div>
+            </div>
+            <div class="col-lg-12 md:col-4 p-3">
+                <div class="p-inputgroup">
+                    <span class="p-inputgroup-addon"><i class="pi pi-unlock"></i></span>
+                    <input type="text" pInputText placeholder="Senha">         
+                </div>
+            </div>
+            <div class="col-lg-12 md:col-4 p-3">
+                <div class="p-inputgroup">
+                    <span class="p-inputgroup-addon"><i class="pi pi-unlock"></i></span>
+                    <input type="text" pInputText placeholder="Confirme a senha">         
+                </div>
+            </div>
+            <button pButton pRipple type="button" label="Prosseguir" class="mt-3 p-button-rounded p-button-info"></button>
+        </div>
+    </form>
 </div>

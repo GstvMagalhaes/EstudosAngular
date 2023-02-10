@@ -32,10 +32,10 @@
     height: 80px;
     display: flex;
     align-items: center;
-    background-color: #21003f;
+    background-color: #071426;
     color: white;
     font-weight: 600;
-    box-shadow: 3px 3px 5px 6px #ccc;
+    box-shadow: 1px 1px 2px 2px rgb(0, 255, 255);
   }
 
   .toolbar img {
