@@ -27,3 +27,32 @@
     font-size: 35px;
     color: rgb(255, 255, 255);
 }
+
+:host ::ng-deep .p-inputmask{
+    width: 170%;
+    height: 3.2rem;
+    border-top-right-radius: 6px !important;
+    border-bottom-left-radius: 1px !important;
+    border-top-left-radius: 1px !important;
+}
+
+.alert{
+    background-color: #040d19;
+    font-style: bold;
+}
+
+:host ::ng-deep .modalConfirm .p-dialog-footer {
+    text-align: center;
+    border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+
+:host ::ng-deep .modalConfirm .p-dialog-footer button {
+    width: 25%;
+    border-radius: 8px;
+}
+
+/* .modal{
+    display: flex;
+    text-align: center;
+} */

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 //IMPORTS DE COMPONENTES DO ANGULAR
 import { AppRoutingModule } from './app-routing.module';
@@ -17,6 +18,9 @@ import {InputTextModule} from 'primeng/inputtext';
 import { HomeComponent } from './pages/home/home.component';
 import {ButtonModule} from 'primeng/button';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {InputMaskModule} from 'primeng/inputmask';
+import { DialogModule } from 'primeng/dialog';
+
 
 @NgModule({
   declarations: [
@@ -33,7 +37,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFirestoreModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    InputMaskModule,
+    DialogModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
