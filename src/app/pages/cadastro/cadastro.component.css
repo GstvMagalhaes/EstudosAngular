@@ -36,6 +36,10 @@
     border-top-left-radius: 1px !important;
 }
 
+p{
+    color: white;
+}
+
 .alert{
     background-color: #040d19;
     font-style: bold;
@@ -50,6 +54,21 @@
 :host ::ng-deep .modalConfirm .p-dialog-footer button {
     width: 25%;
     border-radius: 8px;
+}
+
+:host ::ng-deep .p-button-rounded {
+    transition-duration: 0.4s;
+    border: 1px;
+    border-color: #17002c;
+    border-style: solid;
+    box-shadow: 1px 0px 4px 4px rgb(0, 255, 255);
+    background-color: #000000;
+    color: #ffffff;
+}
+
+:host ::ng-deep .p-button-rounded:hover {
+    background: #10003d !important;
+    color: #ffffff !important;
 }
 
 /* .modal{

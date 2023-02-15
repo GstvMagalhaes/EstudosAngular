@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { regexSenha } from 'src/app/utils/constantes';
+import { regexEmail, regexSenha } from 'src/app/utils/constantes';
 
 @Component({
   selector: 'app-cadastro',
@@ -12,10 +12,11 @@ export class CadastroComponent implements OnInit{
   //variaveis
   titularForm: FormGroup;
   displayModal = false;
+  confirmacao: boolean | undefined;
 
 
   ngOnInit(): void {
-    // throw new Error('Method not implemented.');
+    
   }
 
   constructor(
@@ -26,20 +27,20 @@ export class CadastroComponent implements OnInit{
       nome: ['', [Validators.required, Validators.minLength(2)]],
       dataNasc: ['',[Validators.required]],
       cpf: ['', [Validators.required, Validators.minLength(11)]],
-      email: ['',[Validators.required, Validators.email]],
+      email: ['',[Validators.required, Validators.pattern(regexEmail)]],
       senha: ['', [Validators.required, Validators.pattern(regexSenha)]],
       confSenha: ['', [Validators.required, Validators.pattern(regexSenha)]]
     })
   }
 
-  SenhasCombinam() {
+   SenhasCombinam() {
     let senha = this.titularForm.get('senha')?.value;
     let confirmarSenha = this.titularForm.get('confSenha')?.value;
 
     if (senha != confirmarSenha){
-      this.displayModal = true;
+      this.confirmacao = false;
     } else {
-      console.log('foda');
+      this.confirmacao = true;
     }
   }
 
