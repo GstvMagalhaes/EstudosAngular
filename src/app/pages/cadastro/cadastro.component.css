@@ -71,7 +71,7 @@ p{
     color: #ffffff !important;
 }
 
-/* .modal{
-    display: flex;
-    text-align: center;
-} */
+.msgPassword {
+    text-decoration: underline white 1px;
+    cursor: pointer;
+}

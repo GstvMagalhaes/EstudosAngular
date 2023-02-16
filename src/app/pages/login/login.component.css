@@ -1,0 +1,52 @@
+.section {
+    width: 100%;
+    max-width: 550px;
+    padding: 15px;
+    margin: auto;
+    background-color: #000000;
+    border-radius: 20px;
+    margin-top: 8.4rem;
+    margin-bottom: 1.5rem;
+    border: 4px;
+    border-color: #260726;
+    border-style: solid;
+    box-shadow: 1px 0px 4px 4px rgb(0, 255, 255);
+}
+
+.a{
+    background-color: #000000;
+    padding: 2.2rem;
+}
+
+.formCliente{
+    text-align: center;
+    padding: 2.5rem;
+}
+
+.title{
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+}
+
+:host ::ng-deep .p-inputmask{
+    width: 170%;
+    height: 3.2rem;
+    border-top-right-radius: 6px !important;
+    border-bottom-left-radius: 1px !important;
+    border-top-left-radius: 1px !important;
+}
+
+p{
+    color: white;
+}
+
+.alert{
+    background-color: #040d19;
+    font-style: bold;
+}
+
+.logo{
+    border-radius: 60%;
+    border: 4px;
+    box-shadow: 1px 0px 4px 4px rgb(0, 255, 255);
+}

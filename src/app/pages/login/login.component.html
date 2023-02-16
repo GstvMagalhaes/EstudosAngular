@@ -1,1 +1,33 @@
-<p>login works!</p>
+<div class="section">
+    <form [formGroup]="loginForm">
+        <div class="formCliente">
+            <img
+            class="logo"
+            width="200"
+            alt="Angular Logo"
+            src="https://i.pinimg.com/564x/a2/7c/9d/a27c9d45ee643b2029cfe7381265ae4d.jpg"
+            />
+            <h2 class="mt-3 title">Faça Login!</h2>
+            <div class="mt-5 col-lg-12 md:col-4 p-3">
+                <div class="p-inputgroup">
+                    <span class="p-inputgroup-addon"><i class="pi pi-envelope"></i></span>
+                    <input formControlName="email" type="text" pInputText placeholder="Email">         
+                </div>
+                <div *ngIf="this.loginForm.get('email')?.touched && !this.loginForm.get('email')?.valid" class="alert alert-danger">
+                    Email inválido.
+                </div>
+            </div>
+            <div class="col-lg-12 md:col-4 p-3">
+                <div class="p-inputgroup">
+                    <span class="p-inputgroup-addon"><i class="pi pi-unlock"></i></span>
+                    <input type="text" formControlName="senha" pInputText placeholder="Senha">         
+                </div>
+                <div *ngIf="this.loginForm.get('senha')?.touched && !this.loginForm.get('senha')?.valid" class="alert alert-danger">
+                    Senha inválida.
+                </div>
+            </div>
+        </div>
+    </form>
+</div>       
+            
+

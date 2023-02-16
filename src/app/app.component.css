@@ -7,10 +7,6 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
-  html{
-    background-color: red;
-  }
-
   h1,
   h2,
   h3,
@@ -25,7 +21,8 @@
   }
 
   .spacer {
-    flex: 1;
+    flex: 0.9;
+    margin-left: 55%;
   }
 
   .toolbar {
@@ -303,3 +300,18 @@
   .titulo{
     font-size: 17px;
   }
+
+  :host ::ng-deep .p-button-rounded {
+    transition-duration: 0.4s;
+    border: 1px;
+    border-color: #17002c;
+    border-style: solid;
+    box-shadow: 1px 0px 4px 4px rgb(0, 255, 255);
+    background-color: #000000;
+    color: #ffffff;
+}
+
+:host ::ng-deep .p-button-rounded:hover {
+    background: #10003d !important;
+    color: #ffffff !important;
+}
